@@ -1,0 +1,51 @@
+\documentclass[14pt,a4paper]{extarticle}
+\usepackage[a4paper, mag=1000, left=1cm, right=1cm, top=2cm, bottom=2cm, headsep=0.7cm, footskip=1cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel}
+\usepackage{indentfirst}
+\usepackage{amsfonts} 
+\usepackage{amssymb} 
+\usepackage{amsmath, etoolbox}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\graphicspath{{../image/}}
+\DeclareGraphicsExtensions{.png,.jpg, .jpeg}
+
+\usepackage{csquotes}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand\sectionmark[1]{\markboth{}{\MakeUppercase{#1}}}
+\fancyhead[R]{\thepage}
+\fancyfoot{}
+
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{8pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{8pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+
+\usepackage{listings}
+
+\usepackage[colorlinks]{hyperref}
+\hypersetup{linkcolor=black}
+
+\begin{document}
+
+\input{title}
+
+\addtocounter{page}{1}
+
+\tableofcontents
+\listoffigures
+\newpage
+
+\input{problem}
+\input{theory}
+\input{realization}
+\input{result}
+\input{discussion}
+\input{applications}
+
+\end{document}
